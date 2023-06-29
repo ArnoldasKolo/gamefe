@@ -1,0 +1,169 @@
+.container{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.section2{
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .section2 h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .searchWrapper{
+    background-color: #454B72;
+    width: 30%;
+    display: flex;
+    height: 20px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 30px;
+  }
+  
+  .searchInput{
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-left: 10px;
+  }
+  .section2 select{
+    border: transparent;
+    background-color: #4457F5;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius:20px ;
+    width: 200px;
+    padding: 10px 0px 10px 10px;
+    color: white;
+  }
+  
+  .cardsWrapper{
+    margin-top: 40px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+
+
+  @media (max-width: 1250px) {
+    .container{
+      max-width: 1000px;
+    }
+  
+  }
+
+
+  @media (max-width: 1050px) {
+    .container{
+      max-width: 800px;
+    }
+  
+    .cardsWrapper{
+      gap: 50px;
+    }
+  
+    .section2 h3{
+      font-size: 30px;
+    }
+  
+    .section2 select{
+      width: 150px;
+    }
+  
+  }
+
+
+  @media (max-width: 850px) {
+    .container{
+      max-width: 700px;
+    }
+  
+    .cardsWrapper{
+      gap: 5px;
+    }
+  
+  }
+  
+
+  @media (max-width: 700px) {
+    .container{
+      max-width: 550px;
+    }
+  
+    .cardsWrapper{
+      gap: 80px;
+    }
+  
+  
+    .section2 h3{
+      font-size: 28px;
+    }
+  
+    .section2 select{
+      width: 120px;
+    }
+  
+  }
+
+
+  @media (max-width: 580px) {
+    .container{
+      max-width: 480px;
+    }
+
+    .cardsWrapper{
+      gap: 20px;
+    }
+  
+  
+  }
+
+  @media (max-width: 480px) {
+    .container{
+      max-width: 400px;
+    }
+
+  
+    .section2{
+      flex-wrap: wrap;
+    }
+  
+    .searchWrapper{
+      margin-top: 10px;
+  
+      order: 2;
+      width: 100%;
+  
+    }
+  
+    .section2 h3{
+      font-size: 30px;
+  
+    }
+  
+    .section2 select{
+      width: 80px;
+      order: 1;
+      padding: 5px 10px;
+    }
+
+  
+  }
+  
+
+  @media (max-width: 400px) {
+    .container{
+      max-width: 350px;
+    }
+  
+  
+  }
