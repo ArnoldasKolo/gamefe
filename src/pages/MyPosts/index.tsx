@@ -4,6 +4,7 @@ import styles from "./style.module.css";
 import Header from "@/Components/Header/Header";
 import PostCard from "@/Components/Card/PostCard";
 import router, { useRouter } from "next/router";
+import Cookies from "js-cookie";
 
 interface Post {
   id: string;
@@ -25,7 +26,7 @@ const Booked: React.FC = () => {
         "https://gamesbe.adaptable.app/AllUsersPosts",
         {
           headers: {
-            authorization: localStorage.getItem("GameToken"),
+            authorization:  Cookies.get('GameToken'),
           },
         }
       );
@@ -49,7 +50,7 @@ const Booked: React.FC = () => {
 
   const deletePost = async (postId: string) => {
     const response = await axios.delete(
-      `http://localhost:8081/deletePost/${postId}`
+      `https://gamesbe.adaptable.app/delete/${postId}`
     );
     console.log(response)
     if (response.status === 200) {

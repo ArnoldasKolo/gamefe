@@ -28,7 +28,7 @@ const Post = () => {
   const fetchPost = async () => {
     console.log(router.query.id);
     const response = await axios.get(
-      `https://gamesbe.adaptable.app/${router.query.id}`
+      `https://gamesbe.adaptable.app/post/${router.query.id}`
     );
     console.log(response);
     const { data } = response;
@@ -39,7 +39,7 @@ const Post = () => {
     if (post) {
       try {
         const response = await axios.get(
-          `https://gamesbe.adaptable.app/${post.written_by}`
+          `https://gamesbe.adaptable.app/user/${post.written_by}`
         );
         const { data } = response;
         setUser(data.user);
