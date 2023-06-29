@@ -50,7 +50,7 @@ const Booked: React.FC = () => {
 
   const deletePost = async (postId: string) => {
     const response = await axios.delete(
-      `https://gamesbe.adaptable.app/delete/${postId}`
+      `https://gamesbe.adaptable.app/deletePost/${postId}`
     );
     console.log(response)
     if (response.status === 200) {
