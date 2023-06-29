@@ -95,7 +95,7 @@
     height: 100%;
     background-color: #151832;
     border-style: solid;
-    border-top:transparent;
+    border-top: transparent;
     border-left-color: #4457f5;
     border-right-color: transparent;
     justify-content: right;
@@ -144,7 +144,6 @@
 }
 
 @media (max-width: 700px) {
-
   .logInMob {
     padding: 8px 30px;
   }
@@ -159,7 +158,6 @@
   }
 }
 @media (max-width: 560px) {
-
   .logInMob {
     padding: 8px 20px;
     font-size: 15px;
@@ -172,25 +170,27 @@
 }
 
 @media (max-width: 480px) {
-    .mobnav{
-        padding: 0px;
-    }
-    .logInMob {
-      padding: 5px 15px;
-      font-size: 15px;
-    }
-  
-    .signUpMob {
-      padding: 5px 15px;
-      font-size: 15px;
-    }
-    .mobileMenu {
-        
-        width: 45%;
-        height: 100%;
-        
-      }
+  .platformImage {
+    width: 40px;
+    height: 40px;
   }
+  .mobnav {
+    padding: 0px;
+  }
+  .logInMob {
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+
+  .signUpMob {
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+  .mobileMenu {
+    width: 45%;
+    height: 100%;
+  }
+}
 
 @media (max-width: 350px) {
   .mobnav {
