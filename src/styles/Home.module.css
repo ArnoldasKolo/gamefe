@@ -99,6 +99,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  overflow: hidden;
 }
 
 
@@ -322,6 +323,27 @@
   .heroImage{
     width: 250px;
     height: 200px;
+  }
+
+}
+
+@media (max-width: 350px) {
+  .container{
+    max-width: 300px;
+  }
+
+  .heroImage{
+    width: 250px;
+    height: 200px;
+  }
+
+  .heroText h1{
+    font-size: 25px;
+    width: 150px;
+  }
+
+  .heroText p{
+    font-size: 10px;
   }
 
 }

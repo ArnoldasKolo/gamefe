@@ -50,7 +50,6 @@ type MobileNavProps = {
 };
 
 const MobileNav: React.FC<MobileNavProps> = (props) => {
-  console.log(props.active);
   return (
     <>
       <div
@@ -70,7 +69,6 @@ const MobileNav: React.FC<MobileNavProps> = (props) => {
 };
 
 const MobileNavLoggedIn: React.FC<MobileNavProps> = (props) => {
-  console.log(props.active);
   return (
     <>
       <div

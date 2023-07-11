@@ -127,6 +127,8 @@
     border-style: solid;
     border-radius: 30px;
     padding: 10px 40px;
+    display: flex;
+    justify-content: center;
   }
 
   .logInMob {
@@ -136,6 +138,8 @@
     border-style: solid;
     border-radius: 30px;
     padding: 10px 40px;
+    display: flex;
+    justify-content: center;
   }
 
   .burgerButton {
@@ -199,4 +203,11 @@
   .mobnavOption {
     font-size: 15px;
   }
+
+  .platformImage {
+    width: 35px;
+    height: 35px;
+  }
 }
+
+

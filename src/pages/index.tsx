@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import PostCard from "../Components/Card/PostCard";
 import search from "../Images/search.png";
+import Footer from "@/Components/Footer/Footer";
 
 interface Post {
   id: string;
@@ -16,7 +17,7 @@ interface Post {
   photo: string;
 }
 
-export default function Home() {
+  const Home =  () => {
   const [form, setForm] = useState<string>("");
   const [posts, setPosts] = useState<Post[]>([]);
   const [filter, setFilter] = useState<string>("");
@@ -32,7 +33,6 @@ export default function Home() {
   const fetchAllPosts = async () => {
     const response = await axios.get<{ posts: Post[] }>("https://gamesbe.adaptable.app/posts");
     const { data } = response;
-    console.log(data.posts);
     setPosts(data.posts);
   };
 
@@ -105,3 +105,6 @@ export default function Home() {
     </>
   );
 }
+
+
+export default Home;
